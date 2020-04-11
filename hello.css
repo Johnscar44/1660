@@ -1,16 +1,17 @@
 body {
   background-image: url("badass.jpg");
-  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat. repeat;
   background-size: cover;
   background-color: #b0a7b0;
+  background-attachment: fixed;
   font-family: monospace;
   margin: 30px;
   color: #a432a8;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 h1 {
-  color: teal;
+  color: black;
   text-align: center;
 
 }
@@ -30,7 +31,9 @@ table {
   border-collapse: collapse;
   padding: 20px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 15px;
+  background-color: rgba(117, 190, 218, 0.4);
+
 }
 
 th, td {
