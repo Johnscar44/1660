@@ -1,4 +1,44 @@
 body {
-background-color: black;
-color: white;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.leftbox {
+  float: left;
+  width: 50%;
+}
+
+p {
+  text-align: left;
+}
+
+img {
+  height: 10%;
+  width: auto;
+  position: relative;
+}
+
+table {
+  padding: 20px;
+  border: 2px solid white;
+  border-collapse: collapse;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+th, td {
+  border: 2px solid white;
+  width: 30%;
+  padding: 5px;
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+  max-height: 275px;
 }
