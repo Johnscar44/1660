@@ -4,16 +4,23 @@ header img {
 }
 
 body {
+  background-image: url("background2.jpg");
   background-color: black;
   color: white;
   font-size: 30px;
-  font-family: cursive;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 nav {
+  background-image: url("background.jpg");
   background-color: #dedcdc;
   padding: 5px;
   font-family: monospace;
+}
+
+nav a:hover {
+  color: ;
+  border-bottom: 3px solid;
 }
 
 nav a:link {
