@@ -17,11 +17,21 @@ nav {
 }
 
 nav a:link {
-  color: white;
+  color: red;
   font-weight: bold;
   font-size: 20px;
   padding: 20px;
   margin: 100px;
+}
+
+nav a:visited {
+color: green;
+
+}
+
+nav a:hover {
+  color: blue;
+  border-bottom: 2px solid;
 }
 
 ol {
