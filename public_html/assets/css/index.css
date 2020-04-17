@@ -13,27 +13,20 @@ body {
 
 nav {
   background-color: #dedcdc;
-  padding: 5px;
-  font-family: monospace;
-}
-
-nav a:link {
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
   padding: 20px;
-  margin: 100px;
 }
 
-nav a:visited {
-color: green;
-
+a, a:active, a:hover, a:visited {
+  color: white;
+  text-decoration: none;
+  margin: 5%;
+  font-size: 20px;
 }
 
-nav a:hover {
-  color: blue;
-  border-bottom: 2px solid;
+a:active, a:hover {
+  color: teal;
 }
+
 
 ol {
   float: right;
@@ -45,6 +38,7 @@ ol {
 .parts {
   float: right;
   margin-right: 30%;
+  margin-top: 100px;
 }
 
 h1 {
@@ -63,20 +57,20 @@ img {
 }
 
 .bodyimage {
-  width: 20%;
-  height: 20%;
+  width: 30%;
   float: right;
   position: relative;
   top: -500px;
-  left: -30px;
+  left: 100px;
   margin-right: 20%;
+  margin-top: 15px;
 
 }
 
 .budget {
   float: right;
   position: relative;
-  right: -600px;
+  right: -830px;
 }
 
 table {
@@ -100,6 +94,5 @@ th, td {
 .bottom img {
   width: 100%;
   height: auto;
-  margin-top: 100px;
   max-height: 800px;
 }

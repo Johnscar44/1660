@@ -10,25 +10,37 @@ body {
 
 nav {
   background-color: #dedcdc;
-  padding: 5px;
+  padding: 20px;
 
-  a:link {
- color: red;
- font-weight: bold;
- font-size: 20px;
- padding: 20px;
- margin: 100px;
+}
 
-  a:visited {
- color: green;
+h1 {
+  color: white;
+  text-decoration: underline;
+  position: relative;
+  right: -200px;
+  margin-top: 50px;
 
-  a:hover {
- color: pink;
- border-bottom: 50px solid;
- margin: auto;
 }
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+
+#{$a-tags} {
+color: white;
+text-decoration: none;
+margin: 5%;
+font-size: 20px;
 }
+#{$a-tags-hover} {
+color: teal;
 }
+
+.sideimage {
+  float: right;
+  width: 50%;
+  position: relative;
+  top: -700px;
 }
 
 .infotwo {
@@ -36,13 +48,18 @@ nav {
   color: white;
   text-indent: 50px;
   font-size: 20px;
+  margin-top: 50px;
 }
 
 .list {
       font-size: 20px;
+      margin-bottom: 100px;
+      margin-top: 50px;
       p {
           color: white;
           text-indent: 50px;
+          width: 50%;
+          margin-top: 50px;
       }
       ol {
           color: green;
@@ -50,10 +67,4 @@ nav {
           border-style: groove;
           width: 150px;
       }
-  }
-
-  %message {
-      font-family: monospace;
-      font-size: 18px;
-      font-weight: bold;
   }

@@ -9,22 +9,33 @@ body {
 
 nav {
   background-color: #dedcdc;
-  padding: 5px;
-}
-nav a:link {
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
   padding: 20px;
-  margin: 100px;
 }
-nav a:link a:visited {
-  color: green;
+
+h1 {
+  color: white;
+  text-decoration: underline;
+  position: relative;
+  right: -200px;
+  margin-top: 50px;
 }
-nav a:link a:visited a:hover {
-  color: pink;
-  border-bottom: 50px solid;
-  margin: auto;
+
+a, a:active, a:hover, a:visited {
+  color: white;
+  text-decoration: none;
+  margin: 5%;
+  font-size: 20px;
+}
+
+a:active, a:hover {
+  color: teal;
+}
+
+.sideimage {
+  float: right;
+  width: 50%;
+  position: relative;
+  top: -700px;
 }
 
 .infotwo {
@@ -32,14 +43,19 @@ nav a:link a:visited a:hover {
   color: white;
   text-indent: 50px;
   font-size: 20px;
+  margin-top: 50px;
 }
 
 .list {
   font-size: 20px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 .list p {
   color: white;
   text-indent: 50px;
+  width: 50%;
+  margin-top: 50px;
 }
 .list ol {
   color: green;
