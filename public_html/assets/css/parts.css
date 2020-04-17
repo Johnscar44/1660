@@ -1,0 +1,51 @@
+header img {
+  width: 100%;
+  height: 300px;
+}
+
+body {
+  font-family: monospace;
+}
+
+nav {
+  background-color: #dedcdc;
+  padding: 5px;
+}
+nav a:link {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+  margin: 100px;
+}
+nav a:link a:visited {
+  color: green;
+}
+nav a:link a:visited a:hover {
+  color: pink;
+  border-bottom: 50px solid;
+  margin: auto;
+}
+
+.infotwo {
+  width: 50%;
+  color: white;
+  text-indent: 50px;
+  font-size: 20px;
+}
+
+.list {
+  font-size: 20px;
+}
+.list p {
+  color: white;
+  text-indent: 50px;
+}
+.list ol {
+  color: green;
+  border: 10px solid;
+  border-style: groove;
+  width: 150px;
+}
+
+/*# sourceMappingURL=parts.css.map */
