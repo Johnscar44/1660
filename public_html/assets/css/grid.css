@@ -24,29 +24,19 @@ body {
 
 nav {
   background-color: #dedcdc;
-  padding: 5px;
-  font-family: monospace;
-}
-
-nav a:link {
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
   padding: 20px;
-  margin: 100px;
 }
 
-nav a:visited {
-color: green;
-
+a, a:active, a:hover, a:visited {
+  color: white;
+  text-decoration: none;
+  margin: 5%;
+  font-size: 20px;
 }
 
-nav a:hover {
-  color: blue;
-  border-bottom: 2px solid;
+a:active, a:hover {
+  color: teal;
 }
-
-
 
 html {
   box-sizing: border-box;
