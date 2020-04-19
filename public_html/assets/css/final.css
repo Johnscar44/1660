@@ -54,7 +54,7 @@ ol {
 }
 
 .leftimg {
-  width: 50%;
+  width: 40%;
   height: 400px;
   float:left;
   position: relative;
@@ -63,7 +63,7 @@ ol {
 }
 
 .rightimg {
-  width: 50%;
+  width: 40%;
   height: 300px;
   float: right;
   position: relative;
