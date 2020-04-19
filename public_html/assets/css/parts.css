@@ -36,14 +36,14 @@ a:active, a:hover {
   float: right;
   width: 50%;
   position: relative;
-  top: -700px;
+  top: -900px;
 }
 
 .infotwo {
   width: 50%;
   color: white;
   text-indent: 50px;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 50px;
 }
 
@@ -57,12 +57,10 @@ a:active, a:hover {
   text-indent: 50px;
   width: 50%;
   margin-top: 50px;
+  font-size: 30px;
 }
 .list ol {
   color: green;
-  border: 10px solid;
-  border-style: groove;
-  width: 150px;
 }
 
 /*# sourceMappingURL=parts.css.map */
