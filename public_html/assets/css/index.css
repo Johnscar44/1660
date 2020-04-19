@@ -68,3 +68,17 @@ th, td {
   height: auto;
   max-height: 800px;
 }
+
+.button {
+  color: white;
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+
+}
+
+button:hover {
+  color: black;
+
+}
