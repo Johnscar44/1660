@@ -7,7 +7,7 @@ string = "python"
 print(string.isalpha())
 
 #way two with out makeing a "python" veriable
-print("python".isalpha()))
+print("python".isalpha())
 
 
 #boolean string test methods  true or false
@@ -20,4 +20,10 @@ print("python".isalpha()))
 #.startswith()
 
 
-print("hello".isupper()
+print("hello".isupper())
+
+print("HELLO".isupper())
+
+print("1234".isdigit())
+
+print("HELLO".startswith("i"))
