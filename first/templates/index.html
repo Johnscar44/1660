@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Flask Test</title>
+    </head>
+      <body>
+        <h1>{{headline}}</h1>
+        <style>
+        body{
+          background-color: grey;
+          color: white;
+        }
+          h1 {
+            text-align: center;
+            font-size: 150px;
+            text-decoration: overline;
+            font-weight: bold;
+            font-family: fantasy;
+          }
+          p {
+            text-align: center;
+            font-size: 50px;
+          }
+          ul {
+            font-size: 50px;
+          }
+        </style>
+        <p>HTML testing</p>
+        <p>style testing</p>
+
+        <ul>
+          {%for Pokemon in Pokemon %}
+          <li>{{ Pokemon }}</li>
+          {%endfor%}
+        </ul>
+
+      </body>
+</html>
