@@ -27,3 +27,6 @@ print("HELLO".isupper())
 print("1234".isdigit())
 
 print("HELLO".startswith("i"))
+
+length = "33"
+print(length.isalnum())

@@ -28,8 +28,3 @@ print(check_item.lower() in menu.lower())
 add_item = input("what would you like to add?: ").capitalize()
 print(add_item + menu)
 print(menu , " menu item added!".upper())
-
-
-
-name = "SKYE HOMSI"
-print("y" in name.lower())
