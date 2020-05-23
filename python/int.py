@@ -1,0 +1,5 @@
+num = input("first number?: ")
+print(num)
+num_2 = input("second number?: ")
+print(num_2)
+print(int(num) + int(num_2))
