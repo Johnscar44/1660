@@ -7,7 +7,10 @@ print("type [exit] or [e] to leave the game")
 times_shot = 0
 total_rounds = 30
 total_health = 100
-
+start_time = time.time()
+stop_time = break
+end_time = time.time()
+duration = int(start_time - end_time)
 
 while True:
     click = input("shoot the gun!: ".title())
@@ -30,5 +33,5 @@ while True:
         break
     elif total_health <= 0:
         print("your dead... \n im not sure how this was a very easy game...")
-        print("well either way my god have mercy on your soul you fuckin idiot..".title())
+        print("well either way my god have mercy on your soul..".title())
         break
