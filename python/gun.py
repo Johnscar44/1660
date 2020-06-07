@@ -7,10 +7,7 @@ print("type [exit] or [e] to leave the game")
 times_shot = 0
 total_rounds = 30
 total_health = 100
-start_time = time.time()
-stop_time = break
-end_time = time.time()
-duration = int(start_time - end_time)
+
 
 while True:
     click = input("shoot the gun!: ".title())
