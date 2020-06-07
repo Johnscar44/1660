@@ -1,22 +1,45 @@
-def adding_report():
-    return int(input("enter int!: "))
+def get_report_type():
+    while True:
+        type = input("what report do you want: ")
+        if do_exit(type):
+            return False
+        if type.isalpha():
+            if type.lower() == 'a':
+                print(type)
+                return type
+            elif type.lower() == 't':
+                print(type)
+                return type
+            else:
+                print("incorrect")
+                continue
+
+def add():
+    num = input("enter int: ")
+    if do_exit(num):
+        return False
+    if num.isdigit():
+        print(total)
+        print(num)
+    else:
+        print("please enter a valid answer")
+        return None
 
 
+def do_exit(data):
+    if data.isalpha():
+        if data.lower() == 'q':
+            return True
+    else:
+        return False
 
+
+data = get_report_type()
 while True:
-     choose = input("choose a report type\n\"a\" or \"t\"\nA makes a list and gets total t just outputs total\nQ or quite to leave:  ")
-     if choose.lower().startswith("q"):
+    if data == False:
         print("goodbye".title())
         break
-     elif choose.lower() == "t":
-        print("enter int!: ")
-     elif choose.lower() == "a":
-         print("")
-     else:
-         report = adding_report()
-         if report :
-             print(report)
-         elif report.isalpha().startswith("q").lower() == True:
-             print(report + report)
-         else:
-             print(report)
+    num = add()
+    if num == False:
+        print("goodbye".title())
+        break
