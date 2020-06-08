@@ -15,16 +15,17 @@ def get_report_type():
             else:
                 print("incorrect")
                 continue
-#checks for digit entry loops untill one is given. do_exit referenced again. prints total + num
+#checks for digit entry loops untill one is given. do_exit referenced again. holds "total" + "items"  sends them to while loop
 def add():
-    total = 0
+    x = items
+    y = total
     num = input("enter int: ")
     if do_exit(num):
         return False
     if num.isdigit():
-        total += int(num)
-        print(total)
         print(num)
+    elif num == "done".lower():
+        return num
     else:
         print("please enter a valid answer")
         return None
@@ -37,13 +38,23 @@ def do_exit(data):
     else:
         return False
 
-
+#takes gathered items and total outputs them "\n" with total of the items(numbers)
 data = get_report_type()
 while True:
+    items = ""
+    total = 0
     if data == False:
         print("goodbye".title())
         break
     num = add()
     if num == False:
-        print("peace")
+        print("goodbye2")
         break
+    if num == True:
+        items += num + '\n'
+        total += int(num)
+        print(num)
+    elif num == "done".lower():
+        print("")
+        print("items\n",items)
+        print("total:" , total)
