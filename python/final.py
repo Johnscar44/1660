@@ -30,19 +30,18 @@ def total():
         tot = input("enter int: ")
         if do_exit(tot):
             return False
-        if tot.isdigit():
-            items += tot + '\n'
-            total += int(tot)
-            print(tot)
-        elif tot == "Done".lower():
-            print("")
-            print("total:" , total)
-            print("")
-            print("")
-            return False
-        else:
-            ("invalid entry! try again")
-            return None
+            if tot.isdigit():
+                items += tot + '\n'
+                total += int(tot)
+                print(tot)
+            elif tot == "Done".lower():
+                print("")
+                print("total:" , total)
+                print("")
+                print("")
+            else:
+                ("invalid entry! try again")
+                return None
 
 def add():
     items = ""
@@ -52,15 +51,14 @@ def add():
         num = input("enter int!: ")
         if do_exit(num):
             return False
-        elif num.isdigit():
+            if num.isdigit():
                 items += num + '\n'
                 total += int(num)
                 print(num)
-        elif num == "Done".lower():
-            print("")
-            print("items\n",items)
-            print("total:" , total)
-            return False
+            elif num == "Done".lower():
+                print("")
+                print("items\n",items)
+                print("total:" , total)
         else:
             ("invalid entry! try again")
             return None
