@@ -1,22 +1,12 @@
-print("")
-print("")
-print("\twelcome to my adding report program!".title())
-print("\tit's been made a little differently.".title())
-print("")
-print("I've made a done command, so you can make mulitible lists\n\t     and you can quit at anytime!")
-print("")
-print("")
-
-def get_report_type():
+def adding_report():
     while True:
-        type = input("what report would you like?\n[A] for all items and total\n[T] for just the total\n[Q] to quit at anytime: ")
-        if do_exit(type):
-            return False
+        type = input("choose report type (\"A\" or \"T\")\nreport types include all items (\"A\") or total only (\"T\")".title())
         if type.isalpha():
             if type.lower() == 'a':
                 return type
             elif type.lower() == 't':
                 return type
+<<<<<<< HEAD
             else:
                 print("incorrect")
                 continue
@@ -59,32 +49,36 @@ def add():
                 print("")
                 print("items\n",items)
                 print("total:" , total)
+=======
+            elif type.lower().startswith('q'):
+                return type
+>>>>>>> 6b5f8f75ddcb1479e86942d206328d2db8d8de3e
         else:
-            ("invalid entry! try again")
-            return None
-
-def do_exit(data):
-    if data.isalpha():
-        if data.lower() == 'q':
-            return True
-    else:
-        return False
+            print("incorrect")
 
 
-data = get_report_type()
+
+data = adding_report()
+items = ""
+total = 0
 while True:
-    if data == False:
-        print("goodbye")
-        break
-    elif data == 'a':
-        add()
-    elif data == 't':
-        total()
-    num = add()
-    if num == False:
-        print("gooodbye")
-        break
-    if data == 'a':
-        add()
-    if data == 't':
-        total()
+    x = input("Enter integer or \"Q\" to quit: ")
+    if data == "a":
+        if x.isdigit():
+            items += x + '\n'
+            total += int(x)
+        elif x == "q":
+            print("items\n",items)
+            print("total:",total)
+            break
+        else:
+            print(x , "is invalid input")
+    if data == "t":
+        if x.isdigit():
+            items += x + '\n'
+            total += int(x)
+        elif x == "q":
+            print("total:",total)
+            break
+        else:
+            print(x , "is invalid input")

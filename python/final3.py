@@ -1,58 +1,33 @@
-def get_report_type():
+def adding_report(r_type):
+    input_string = ""
+    input_total = 0
     while True:
-        type = input("what report do you want: ")
-        if do_exit(type):
-            return False
-        if type.isalpha():
-            if type.lower() == 'a':
-                print(type)
-                return type
-            elif type.lower() == 't':
-                print(type)
-                return type
+        input_items = input("Enter an integer or \"Q\" to quit: ")
+        if input_items.isdigit():
+            if r_type == "A":
+                input_total += int(input_items)
+                input_string = input_string + "\n" + input_items
             else:
-                print("incorrect")
-                continue
-
-def add():
-    items = ""
-    total = 0
-    while True:
-        num = input("enter int \nor\ndone for items and total\n[q] to quit: ")
-        if do_exit(num):
-            return False
-            if num.isdigit():
-                items += num + '\n'
-                total += int(num)
-                print(num)
-            elif num == "done".lower():
-                return items
-                return total
+                input_total += int(input_items)
+        elif input_items.upper().startswith("Q"):
+            if r_type == "A":
+                print("\nItems" + input_string + "\n" "\nTotal\n" + str(input_total))
+                break
+            else:
+                print("\nTotal\n" + str(input_total))
+                break
         else:
-            ("invalid entry! try again")
-            return None
+            print("Invalid input")
 
-def do_exit(data):
-    if data.isalpha():
-        if data.lower() == 'q':
-            return True
-    else:
-        return False
-
-
-data = get_report_type()
+report_type = input("Choose Report Type(\"A\" or \"T\"): ").upper()
 
 while True:
-    if data == False:
-        print("goodbye")
+    if report_type == "A":
         break
-    num = add()
-    if num == False:
-        print("gooodbye")
+    elif report_type == "T":
         break
-        if num == True:
-            x += num + '\n'
-            y += int(num)
-            print(num)
-            print(x)
-            print(y)
+    else:
+        print("invalid input")
+        report_type = input("Choose Report Type(\"A\" or \"T\"): ").upper()
+
+adding_report(report_type)
