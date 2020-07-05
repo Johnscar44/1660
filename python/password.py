@@ -38,7 +38,7 @@ while True:
     if name == True:
         password = get_password()
         if password == True:
-            print("bridget is a jerk")
+            print("stuff here")
             break
         elif password == False:
             print("wrong password")
