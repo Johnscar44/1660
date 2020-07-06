@@ -10,8 +10,11 @@ print("### input [quit] to exit ###".title())
 def get_username(name):
     while True:
         name = input("input username: ")
-        if name == 'quit':  #returns false to while loop for quitting in get_unsername function
-            return False
+        quit = exit_now("word")
+        if quit == True:
+            return True
+        #if name == 'quit':  #returns false to while loop for quitting in get_unsername function
+            #return False
 #doesnt let the user make a user name longer then 16 charactors
         elif len(name) >= 16:
             print("username too long")
@@ -34,7 +37,9 @@ def are_you_sure():
         else:
             print("Not Valid Input [y] or [n]")#only input here avalible is y or n
 
-
+def exit_now(word):
+    if word == "quit":
+        return True
 
 score = 0
 user = get_username("name")
@@ -42,7 +47,7 @@ while True:
     if user == False:
         print("goodbye!".title())
         break
-    elif user.isalpha():
+    elif user:
         im_sure = are_you_sure()
         if im_sure == False:
             print("resetting username".title())
