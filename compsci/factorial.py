@@ -23,3 +23,13 @@ factorial = 1
 for i in range(1,mystery_int + 1):
     factorial = factorial*i
 print(factorial)
+print("")
+print("other factorial example")
+print("")
+
+
+num = 5
+result = 1
+for i in range(1,num + 1):
+    result = result*i
+print(result)
